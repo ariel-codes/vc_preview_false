@@ -233,7 +233,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data
-  view_component (~> 2.0)
+  view_component
 
 RUBY VERSION
    ruby 3.2.2p53
