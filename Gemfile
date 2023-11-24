@@ -17,7 +17,11 @@ gem "puma", ">= 5.0"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[windows jruby]
 
-gem "view_component"
+# Order matters for these gems
+# lookbook first enables `/rails/view_components/` route
+# even when `config.view_component.show_previews` is false
+gem "lookbook"
+gem "view_component", "~> 2.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
